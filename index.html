@@ -44,12 +44,21 @@
           </ul>
         </address>
       </div>
+      <button type="button" class="button-icon-group" width="16" height="14">
+        <svg
+          class="icon-group"
+          width="16.80000114440918"
+          height="14.40000057220459"
+        >
+          <use href="./images/icons.svg#icon-icon-group-burger"></use>
+        </svg>
+      </button>
     </header>
     <main>
       <!-- effective Solutions
           for Your Business -->
       <section class="first-section">
-        <div class="container">
+        <div class="container container-all">
           <h1 class="main-header">Effective Solutions for Your Business</h1>
           <button class="button" type="button">Order Service</button>
         </div>
@@ -118,6 +127,7 @@
             <li class="team-list-mark">
               <img
                 src="./images/markguerrero.jpg"
+                srcset="./images/markguerrero.jpg 1x, ./images/Mark-x2.jpg 2x"
                 alt="Mark Guerrero"
                 width="264"
               />
@@ -161,7 +171,12 @@
               </div>
             </li>
             <li class="team-list-mark">
-              <img src="./images/tomford.jpg" alt="Tom Ford" width="264" />
+              <img
+                src="./images/tomford.jpg"
+                srcset="./images/tomford.jpg 1x, ./images/tom-2x.jpg 2x"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="name-and-position">
                 <h3 class="header-third">Tom Ford</h3>
                 <p class="paragraph-team">Frontend Developer</p>
@@ -204,6 +219,10 @@
             <li class="team-list-mark">
               <img
                 src="./images/camila-garcia.jpg"
+                srcset="
+                  ./images/camila-garcia.jpg 1x,
+                  ./images/camila-2x.jpg     2x
+                "
                 alt="Camila Garcia"
                 width="264"
               />
@@ -249,6 +268,10 @@
             <li class="team-list-mark">
               <img
                 src="./images/daniel-wilson.jpg"
+                srcset="
+                  ./images/daniel-wilson.jpg 1x,
+                  ./images/daniel-2x.jpg     2x
+                "
                 alt="Daniel Wilson"
                 width="264"
               />
@@ -303,6 +326,10 @@
               <div class="portfolio-list-img">
                 <img
                   src="./images/banking-ap.jpg"
+                  srcset="
+                    ./images/banking-ap.jpg 1x,
+                    ./images/banking-2x.jpg 2x
+                  "
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -324,6 +351,10 @@
               <div class="portfolio-list-img">
                 <img
                   src="./images/Cashless-Payment.jpg"
+                  srcset="
+                    ./images/Cashless-Payment.jpg     1x,
+                    ./images/Cashless-Payment.jpg.jpg 2x
+                  "
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -345,6 +376,10 @@
               <div class="portfolio-list-img">
                 <img
                   src="./images/meditation-ap.jpg"
+                  srcset="
+                    ./images/meditation-ap.jpg 1x,
+                    ./images/meditation-2x.jpg 2x
+                  "
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -366,6 +401,7 @@
               <div class="portfolio-list-img">
                 <img
                   src="./images/taxi-service.jpg"
+                  srcset="./images/taxi-service.jpg 1x, ./images/taxi-2x.jpg 2x"
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -387,6 +423,10 @@
               <div class="portfolio-list-img">
                 <img
                   src="./images/screen-illustration.jpg"
+                  srcset="
+                    ../images/screen-illustration.jpg 1x,
+                    ./images/screen-2x.jpg            2x
+                  "
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -408,6 +448,10 @@
               <div class="portfolio-list-img">
                 <img
                   src="./images/online-course.jpg"
+                  srcset="
+                    ./images/online-course.jpg 1x,
+                    ./images/online-2x.jpg     2x
+                  "
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -431,47 +475,49 @@
     </main>
     <footer class="footer">
       <div class="container-footer container">
-        <div class="main-footer">
-          <a class="under-title" href="./index.html">
-            WEB<span class="two-studio">Studio</span></a
-          >
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-        <div class="footer-second-group">
-          <p class="paragraph-socal-media">Social media</p>
-          <ul class="footer-icon-list">
-            <li class="footer-icon-list-li">
-              <a class="footer-href" href="">
-                <svg class="svg-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-icon-list-li">
-              <a class="footer-href" href="">
-                <svg class="svg-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-icon-list-li">
-              <a class="footer-href" href="">
-                <svg class="svg-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-icon-list-li">
-              <a class="footer-href" href="">
-                <svg class="svg-footer" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="footer-first-group">
+          <div class="main-footer">
+            <a class="under-title" href="./index.html">
+              WEB<span class="two-studio">Studio</span></a
+            >
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="footer-second-group">
+            <p class="paragraph-socal-media">Social media</p>
+            <ul class="footer-icon-list">
+              <li class="footer-icon-list-li">
+                <a class="footer-href" href="">
+                  <svg class="svg-footer" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-icon-list-li">
+                <a class="footer-href" href="">
+                  <svg class="svg-footer" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-icon-list-li">
+                <a class="footer-href" href="">
+                  <svg class="svg-footer" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-icon-list-li">
+                <a class="footer-href" href="">
+                  <svg class="svg-footer" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer-input-container">
           <p class="text-input-footer">Subscribe</p>
@@ -487,7 +533,7 @@
             </label>
             <button class="button-footer" type="submit">
               Subscribe
-              <svg class="svg-footer" width="24" height="24">
+              <svg class="svg-footer-telegram" width="24" height="24">
                 <use href="./images/icons.svg#icon-telegrame"></use>
               </svg>
             </button>
@@ -495,7 +541,67 @@
         </div>
       </div>
     </footer>
-    <div class="background-fone">
+    <!-- <div class="mobile-menu-wrap">
+      <div div class="mobile-menu-element">
+        <button type="button" class="close-element">
+          <svg class="svg-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-list">
+          <li>
+            <a class="mobile-menu-list-li" href="./index.html">Studio</a>
+          </li>
+          <li><a class="mobile-menu-list-li" href="">Portfolio</a></li>
+          <li><a class="mobile-menu-list-li" href="">Contacts</a></li>
+        </ul>
+        <address>
+          <ul class="contact-list-mobile">
+            <li class="contact-li">
+              <a class="gmail-mobile" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-li">
+              <a class="gmail-mobile" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="footer-icon-list-mobile">
+          <li class="footer-icon-list-li">
+            <a class="footer-href" href="">
+              <svg class="svg-footer" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-icon-list-li">
+            <a class="footer-href" href="">
+              <svg class="svg-footer" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-icon-list-li">
+            <a class="footer-href" href="">
+              <svg class="svg-footer" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-icon-list-li">
+            <a class="footer-href" href="">
+              <svg class="svg-footer" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+    <!-- <div class="background-fone">
       <div class="element">
         <button type="button" class="close-element">
           <svg class="svg-close" width="8" height="8">
@@ -579,6 +685,6 @@
           <button class="button-element" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
