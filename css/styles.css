@@ -36,6 +36,10 @@ body {
 
 } 
 
+.container-all {
+
+}
+
 .nav-list a:hover {
     color: #404bbf;
     text-decoration: none;
@@ -113,12 +117,17 @@ ul {
 .first-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark.png);
     background-repeat: no-repeat;
-    min-width: 320px;
-    max-width: 1440px;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
-    height: 432px;
+    padding-bottom:  72px;
+
+}
+
+@media (max-width: 768px) and (min-resolution: 192dpi) {
+    .first-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-x2.jpg);
+    }
 }
 
 .main-header {
@@ -129,7 +138,7 @@ ul {
         letter-spacing: 2%;
         text-align: center;
         color: #FFFFFF;
-        width: 216px;
+        max-width: 216px;
 }
 
 /* button */
@@ -145,6 +154,7 @@ ul {
     border: #4D5AE5;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 72px;
 }
 
 .button:hover {
@@ -169,9 +179,9 @@ ul {
 
 .header-third {
     font-family: Roboto;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 40px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
         letter-spacing: 2%;
         text-align: center;
         color: #2e2f42;
@@ -319,13 +329,14 @@ ul {
 
 img {
     display: block;
-    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
-    min-width: 288px;
-    max-width: 1158px;
+    max-width: 320px;
     margin: 0 auto;
+    padding: 0 16px;
     position: relative;
 }
 
@@ -424,7 +435,7 @@ img {
 /* second section */
 
 .second-section {
-    padding: 94px 0;
+    padding: 96px 0;
 }
 
 .visually-hidden {
@@ -494,12 +505,6 @@ img {
     margin-bottom: 72px;
 }
 
-.portfolio-list {
-    display: flex;
-    flex-direction: column;
-    column-gap: 24px;
-    row-gap: 48px;
-}
 
 .portfolio-list-li {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -602,6 +607,7 @@ img {
 .footer-icon-list {
     display: flex;
     gap: 16px;
+    justify-content: center;
 }
 
 .svg-footer {
@@ -658,17 +664,14 @@ img {
 }
 
 .paragraph-socal-media {
-    display: flex;
     margin-bottom: 16px;
-    justify-content: start;
     letter-spacing: 0.02em;
 }
 
 .footer-second-group {
-    display: flex;
-        flex-direction: inherit;
         align-items: center;
         margin-bottom: 72px;
+        text-align: center;
 }
 
 .footer-icon-list-li {
@@ -943,7 +946,7 @@ border-radius: 4px;
 
 .input-email-footer {
     height: 40px;
-    width: 264px;
+    width: 288px;
     border-radius: 4px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -1065,22 +1068,33 @@ margin-bottom: 168px;
     gap: 40px;
 }
 
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+    .first-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/Dark-bg-medium-x2.jpg");
+    }
+}
+
+
 @media (min-width: 768px) {
     /* second section */
 
     .first-section{
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-two.png);
+        padding-bottom: 112px;
     }
 
     .second-section {
-        min-width: 736px;
-        padding: 16px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 
+    .container {
+        max-width: 768px;
     }
         
 
     .content-list-li {
-        width: 356px;
+        flex: 0 0 calc(50% - 12px);
     }
     
     .content-list {
@@ -1088,6 +1102,9 @@ margin-bottom: 168px;
         flex-wrap: wrap;
         gap: 24px;
         flex-direction: row;
+        list-style: none;
+        margin-bottom: 94px;
+        margin-top: 94px;
         }
 
     
@@ -1103,8 +1120,10 @@ margin-bottom: 168px;
         .portfolio-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 24px;
-            flex-direction: row;
+            column-gap: 24px;
+            row-gap: 72px;
+            list-style: none;
+           
 
         }
 
@@ -1117,7 +1136,7 @@ margin-bottom: 168px;
         }
 
         .portfolio-list-li {
-            width: 356px;
+            flex: 0 0 calc(50% - 12px);
         }
 
         .team-list{
@@ -1132,7 +1151,7 @@ margin-bottom: 168px;
         /* footer */
 
         .footer {
-            padding: 96px 96px 96px 108px ;
+            padding: 96px 0 ;
             text-align: start;
         }
 
@@ -1200,6 +1219,14 @@ gap: 12px;
        }
 }
 
+@media (min-width: 1024px) and (min-resolution: 192dpi) {
+    .first-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/dark-x2-bix.jpg");
+    }
+}
+
+
+
 @media (min-width: 1024px) {
     .content-list {
         display: flex;
@@ -1209,6 +1236,7 @@ gap: 12px;
 
         .first-section {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+
         }
 
     .header-third {
@@ -1221,6 +1249,11 @@ gap: 12px;
             display: flex;
             
     }
+
+        .our-team-section {
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
 
     .text-content {
         font-family: Roboto;
@@ -1250,30 +1283,48 @@ gap: 12px;
     }
 
     .first-section {
-        min-width: 1440px;
-        height: 600px;
+        max-width: 1440px;
+        padding-top: 188px;
+        padding-bottom: 188px;
     }
 
        .container {
-        width: 1158px;
+        max-width: 1158px;
             padding-left: 15px;
             padding-right: 15px;
             margin: 0 auto;
        }
-           .container-all {
-            position: relative;
-            top: 120px;
-           }
+    
+
     .team-list {
-        display: flex;
+        /* display: flex; */
+        /* flex: initial; */
     }
     
+    .content-list-li {
+        flex: initial;
+    }
+
     .footer-input-container {
         display: flex;
             flex-direction: inherit;
             position: absolute;
             left: 600px;
-            /* position: relative; */
             align-items: anchor-center;
     }
+
+    .section-portfolio {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .main-footer {
+        margin-bottom: 0;
+    }
+
+    .footer-second-group {
+        margin-bottom: 0;
+    }
+
 }
+
